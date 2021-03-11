@@ -1,0 +1,6 @@
+https://allocations-pal-rahul.apps.evans.pal.pivotal.io/allocations?projectId=1
+https://backlog-pal-rahul.apps.evans.pal.pivotal.io/stories?projectId=2
+https://timesheets-pal-rahul.apps.evans.pal.pivotal.io/time-entries?userId=1
+https://registration-pal-rahul.apps.evans.pal.pivotal.io/users/1
+https://registration-pal-rahul.apps.evans.pal.pivotal.io/accounts?ownerId=2
+https://registration-pal-rahul.apps.evans.pal.pivotal.io/projects?accountId=1
