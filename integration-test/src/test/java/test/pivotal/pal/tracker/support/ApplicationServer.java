@@ -37,9 +37,10 @@ public class ApplicationServer {
 
         start(envMapBuilder()
             .put("SPRING_DATASOURCE_URL", dbUrl)
-                .put("EUREKA_CLIENT_ENABLED", "false")
-                .put("RIBBON_EUREKA_ENABLED", "false")
-                .put("REGISTRATION_SERVER_RIBBON_LISTOFSERVERS", "http://localhost:8883")
+            .put("EUREKA_CLIENT_ENABLED", "false")
+            .put("RIBBON_EUREKA_ENABLED", "false")
+            .put("REGISTRATION_SERVER_RIBBON_LISTOFSERVERS", "http://localhost:8883")
+            .put("APPLICATION_OAUTH_ENABLED", "false")
             .build()
         );
     }
@@ -47,7 +48,6 @@ public class ApplicationServer {
     public void stop() {
         serverProcess.destroyForcibly();
     }
-
 
     public static void waitOnPorts(String... ports) throws InterruptedException {
         for (String port : ports) waitUntilServerIsUp(port);
